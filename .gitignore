@@ -1,6 +1,6 @@
 .ipynb_checkpoints
 .vscode
-./airbnb-amenity-detection
+airbnb-amenity-detection
 DataSets
 ObjectDec_videos
 videos
@@ -12,3 +12,6 @@ retinanet_model_final_config.yaml
 retinanet_model_final.pth
 Unconfirmed 60054.crdownload
 wandb
+Untitled.ipynb
+modules/__pycache__/train.cpython-38.pyc
+Airnb_ObjectDetection.ipynb

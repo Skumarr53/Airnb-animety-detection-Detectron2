@@ -33,6 +33,8 @@ from detectron2.utils.events import (
         JSONWriter,
         TensorboardXWriter
 )
+from pdb import set_trace
+
 
 # Setup logger
 logger = logging.getLogger("detectron2")
@@ -63,9 +65,7 @@ def do_test(cfg, model):
                 output_folder=os.path.join(cfg.OUTPUT_DIR, "inference", dataset_name)
         )
         # Make inference on dataset
-        results_i = inference_on_dataset(model,
-                                                                         data_loader,
-                                                                         evaluator)
+        results_i = inference_on_dataset(model,data_loader,evaluator)
         # Update results dictionary
         results[dataset_name] = results_i
 
@@ -96,6 +96,7 @@ def do_test(cfg, model):
 def do_train(cfg, model, resume=False):
     # Set model to training mode
     model.train()
+
     # Create optimizer from config file (returns torch.nn.optimizer.Optimizer)
     optimizer = build_optimizer(cfg, model)
     # Create scheduler for learning rate (returns torch.optim.lr._LR_scheduler)
@@ -244,7 +245,7 @@ def main(args):
     logger.info("Model:\n{}".format(model))
 
     # TODO: Fix this (if it doesn't work)
-    #wandb.watch(model, log="all")
+    wandb.watch(model, log="all")
 
     # Only do evaluation if the args say so
     if args.eval_only:

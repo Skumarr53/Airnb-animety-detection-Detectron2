@@ -29,13 +29,7 @@ wget https://storage.googleapis.com/openimages/2018_04/test/test-annotations-bbo
 !wget https://storage.googleapis.com/airbnb-amenity-detection-storage/airbnb-amenity-detection/open-images-data/retinanet_model_final/retinanet_model_final_config.yaml
 
 # Downloaded
-Bathtub,Coffeemaker,Fireplace,Toilet,Swimming_pool,Bed,Billiard_table,Sink,Fountain,Oven,Ceiling_fan,Television,Microwave_oven,Gas_stove, Refrigerator,Kitchen_&_dining_room_table,Washing_machine,Stairs,Pillow,Mirror,Shower,Couch,Countertop,Dishwasher,Sofa_bed
-
-# Downloading
-Tree_house,Towel,Porch
-
-#Yet to Download
-,Wine_rack,Jacuzzi
+Bathtub,Coffeemaker,Fireplace,Toilet,Swimming_pool,Bed,Billiard_table,Sink,Fountain,Oven,Ceiling_fan,Television,Microwave_oven,Gas_stove, Refrigerator,Kitchen_&_dining_room_table,Washing_machine,Stairs,Pillow,Mirror,Shower,Couch,Countertop,Dishwasher,Sofa_bed,Tree_house,Towel,Porch,Wine_rack,Jacuzzi
 
 
 
